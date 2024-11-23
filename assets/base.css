@@ -2886,6 +2886,20 @@ details-disclosure > details {
   position: relative;
 }
 
+.btn__contact-us {
+  color: #fdf5e6;
+  border-radius: 3rem;
+  padding: 0px 1.25rem;
+  height: 30px;
+  margin-top: 6px;
+  background-color: #034436;
+}
+
+.btn__contact-us:hover {
+  color: #fff;
+  background-color: #1f3626;
+}
+
 @keyframes animateMenuOpen {
   0% {
     opacity: 0;
