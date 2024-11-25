@@ -1,0 +1,52 @@
+<div class="page-wrapper">
+    <!-- Main Content -->
+    <section class="hero">
+      <h1>{{ section.settings.heading }}</h1>
+      <p class="subheading">7 guests · 3 bedrooms · 6 beds · 2 bathrooms</p>
+      <p class="description">{{section.settings.description}}</p>
+      <a href="#" class="learn-more-button">Learn More <span>&#8594;</span></a>
+    </section>
+  
+    <!-- Listings -->
+    {% comment %} #TODO: Move to it's own liquid component later {% endcomment %}
+    <section class="listings">
+      <div class="listing-item">
+        <h2>Listing 01</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia.</p>
+      </div>
+      <div class="listing-item">
+        <h2>Listing 02</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia.</p>
+      </div>
+      <div class="listing-item highlighted">
+        <h2>Listing 03</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia.</p>
+      </div>
+    </section>
+  </div>
+
+  {% schema %}
+{
+    "name": "hustlers-homepage-banner",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Welcome to My Custom Section"
+        },
+        {
+            "type": "textarea",
+            "id": "description",
+            "label": "Description",
+            "default": "This is a custom description for the section."
+        }
+    ],
+    "presets": [
+        {
+            "name": "hustlersAvenue-hompage-banner",
+            "category": "Custom"
+        }
+    ]
+}
+{% endschema %}

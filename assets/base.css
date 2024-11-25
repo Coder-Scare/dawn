@@ -3609,3 +3609,26 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+/* Hustlers Homepage Banner */
+
+
+
+/* Fonts */
+@font-face {
+  font-family: "Gill Sans";
+  src: url(./Gill-Sans.woff) format("woff");
+}
+
+@font-face {
+  font-family: "CorporateAPro-Regular";
+  src: url(./CorporateAPro-Regular.woff) format("woff");
+}
+
+.h2 { 
+  font-family: "CorporateAPro-Regular" !important;
+ }
+
+.header__menu-item { 
+  font-family: 'Gill Sans' !important; 
+}
