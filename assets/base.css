@@ -3612,7 +3612,222 @@ details-disclosure > details {
 
 /* Hustlers Homepage Banner */
 
+.hustlers-wrapper {
+  padding: 0px 10% 50px;
+}
 
+.hustlers-wrapper .hero {
+  /* width: 60%; */
+}
+
+.hustlers-wrapper h1 {
+  font-family: "CorporateAPro-Regular";
+  font-weight: 500;
+  font-size: 65px;
+  margin-bottom: 5px;
+  color: #3d4d56;
+}
+
+.hustlers-wrapper .subheading {
+  font-size: 18px;
+  font-style: italic;
+  color: #656E65;
+  margin-bottom: 20px;
+}
+
+.hustlers-wrapper .description {
+  font-size: 18px;
+  font-family: "Gill sans";
+  font-weight: 600;
+  line-height: 1.6;
+  max-width: 700px;
+  color: #3d4d56;
+}
+
+.hustlers-wrapper .learn-more-button {
+  background-color: #034436;
+  color: #fdf5e6;
+  margin-top: 20px;
+  padding: 10px 0px 10px 30px;
+  border-radius: 25px;
+  font-family: "Gill Sans";
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 20px 20px 40px rgba(237, 176, 92, 0.65);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* TODO: REPLACE ARROW LATER */
+.hustlers-wrapper .learn-more-button-arrow {
+  margin: 0 5px 0 25px;
+  padding: 10px;
+  border-radius: 100%;
+  font-size: 15px;
+  height: 10px;
+  color: #E06C55;
+  background-color: #fdf5e6;
+}
+
+.hustlers-wrapper .learn-more-button:hover {
+  transform: translateY(-2px);
+}
+
+/* Listing Section */
+
+.hustlers-wrapper .listings {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.hustlers-wrapper .listing-item {
+  text-align: left;
+  padding: 40px;
+  max-width: 450px;
+  border-radius: 10px;
+  position: relative; /* Required to position the .number element */
+}
+
+.hustlers-wrapper .listing-item .number {
+  font-size: 60px;
+  font-family: "CorporateAPro-Regular";
+  position: absolute;
+  top: 0px;
+  right: 20px; /* Adjusted for proper alignment */
+  color: #3d4d56; /* Default text color for numbers */
+}
+
+.hustlers-wrapper .title {
+  font-size: 35px;
+  font-family: "CorporateAPro-Regular";
+  margin: 20px 0 10px;
+  color: #3d4d56;
+}
+
+.hustlers-wrapper .listing-item p {
+  font-size: 16px;
+  font-family: "Gill Sans";
+  color: #3d4d56;
+  max-width: 350px;
+}
+
+.hustlers-wrapper .listing-item:nth-child(3) {
+  background-color: #e45e44; 
+  color: #FFF;
+  border-radius: 150px 10px 150px 150px;
+  box-shadow: 20px 20px 40px rgba(237, 176, 92, 0.65);
+}
+
+.hustlers-wrapper .listing-item:nth-child(3) .number {
+  color: #000; 
+}
+.hustlers-wrapper .listing-item:nth-child(3) .title {
+  color: #fff; /* White number for highlighted listing */
+}
+
+.hustlers-wrapper .listing-item:nth-child(3) h3,
+.hustlers-wrapper .listing-item:nth-child(3) p {
+  color: #FFF; /* White text */
+}
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+  .hustlers-wrapper h1 {
+    font-size: 50px;
+  }
+
+  .hustlers-wrapper .description {
+    font-size: 16px;
+  }
+
+  .hustlers-wrapper .listings {
+    justify-content: center;
+  }
+
+  .hustlers-wrapper .listing-item {
+    max-width: 400px;
+    padding: 30px;
+  }
+
+  .hustlers-wrapper .listing-item .number {
+    font-size: 50px;
+  }
+
+  .hustlers-wrapper .title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hustlers-wrapper {
+    padding: 0px 5% 50px;
+  }
+
+  .hustlers-wrapper h1 {
+    font-size: 40px;
+  }
+
+  .hustlers-wrapper .subheading,
+  .hustlers-wrapper .description {
+    font-size: 14px;
+  }
+
+  .hustlers-wrapper .listings {
+    display: flex;
+    justify-content:space-between;
+    margin-top: 50px;
+    max-width: 100%; 
+  }
+
+  .hustlers-wrapper .listing-item {
+    max-width: 100%; /* Full width for small screens */
+    padding: 30px;
+  }
+
+  .hustlers-wrapper .listing-item .number {
+    font-size: 40px;
+  }
+
+  .hustlers-wrapper .title {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 580px) {
+  .hustlers-wrapper .listings {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .hustlers-wrapper h1 {
+    font-size: 30px;
+  }
+
+  .hustlers-wrapper .description {
+    font-size: 12px;
+  }
+
+  .hustlers-wrapper .learn-more-button {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .hustlers-wrapper .listing-item .number {
+    font-size: 35px;
+  }
+
+  .hustlers-wrapper .title {
+    font-size: 20px;
+  }
+
+  .hustlers-wrapper .listing-item {
+    padding: 25px;
+  }
+}
 
 /* Fonts */
 @font-face {
@@ -3630,5 +3845,5 @@ details-disclosure > details {
  }
 
 .header__menu-item { 
-  font-family: 'Gill Sans' !important; 
+  font-family:'Gill Sans', 'Gill Sans MT', sans-serif !important; 
 }
