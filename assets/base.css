@@ -3618,9 +3618,9 @@ details-disclosure > details {
   margin-left: 20px;
   /* margin-top: 6px; */
   background-color: #034436;
-  /* position: absolute; */
-  /* right: 20px;
-  bottom: 7px; */
+  /* position: relative;
+  left: 0; */
+  /* bottom: 7px; */
 }
 
 .btn__contact-us:hover {
