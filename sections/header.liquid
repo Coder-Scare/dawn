@@ -278,6 +278,8 @@
           </div>
         {%- endif -%}
       </a>
+      {% comment %} Hard code ContactUs Button and style {% endcomment %}
+    <a class="header__menu-item link link--text focus-inset btn__contact-us" href="/pages/contact">Contact Us</a>
     </div>
   </header>
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>

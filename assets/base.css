@@ -2803,11 +2803,14 @@ details[open] > .header__submenu {
 
 .header__menu-item span {
   transition: text-decoration var(--duration-short) ease;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .header__menu-item:hover span {
   text-decoration: underline;
-  text-underline-offset: 0.3rem;
+  text-decoration-thickness: 0.3rem;
+  text-underline-offset: 0.8rem;
 }
 
 details[open] > .header__menu-item {
@@ -2826,11 +2829,13 @@ details[open] > .header__menu-item .icon-caret {
   transition: text-decoration-thickness var(--duration-short) ease;
   color: rgb(var(--color-foreground));
   text-decoration: underline;
-  text-underline-offset: 0.3rem;
+  text-decoration-color: #E06C55;
+  text-underline-offset: 0.8rem;
+  text-decoration-thickness: 0.3rem;
 }
 
 .header__menu-item:hover .header__active-menu-item {
-  text-decoration-thickness: 0.2rem;
+  text-decoration-thickness: 0.3rem;
 }
 
 .header__submenu {
@@ -2884,20 +2889,6 @@ details[open] > .header__menu-item .icon-caret {
 header-menu > details,
 details-disclosure > details {
   position: relative;
-}
-
-.btn__contact-us {
-  color: #fdf5e6;
-  border-radius: 3rem;
-  padding: 0px 1.25rem;
-  height: 30px;
-  margin-top: 6px;
-  background-color: #034436;
-}
-
-.btn__contact-us:hover {
-  color: #fff;
-  background-color: #1f3626;
 }
 
 @keyframes animateMenuOpen {
@@ -3610,6 +3601,23 @@ details-disclosure > details {
   }
 }
 
+/* ------ STYLING ADDED ------ */
+
+/* Contact Us Button */
+.btn__contact-us {
+  color: #fdf5e6;
+  border-radius: 3rem;
+  padding: 0px 1.25rem;
+  height: 30px;
+  margin-top: 6px;
+  background-color: #034436;
+}
+
+.btn__contact-us:hover {
+  color: #fff;
+  background-color: #1f3626;
+}
+
 /* Hustlers Homepage Banner */
 
 .hustlers-wrapper {
@@ -3840,8 +3848,11 @@ details-disclosure > details {
   src: url(./CorporateAPro-Regular.woff) format("woff");
 }
 
+/* Text styling */
 .h2 { 
   font-family: "CorporateAPro-Regular" !important;
+  font-size: 32px;
+  color: #034436 !important;
  }
 
 .header__menu-item { 
