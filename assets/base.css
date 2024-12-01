@@ -3660,6 +3660,7 @@ details-disclosure > details {
 }
 
 .hustlers-wrapper .learn-more-button {
+  display: inline-flex;
   background-color: #034436;
   color: #fdf5e6;
   margin-top: 20px;
@@ -3669,24 +3670,28 @@ details-disclosure > details {
   font-weight: bold;
   letter-spacing: 2px;
   text-decoration: none;
-  display: inline-block;
   box-shadow: 20px 20px 40px rgba(237, 176, 92, 0.65);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* TODO: REPLACE ARROW LATER */
-.hustlers-wrapper .learn-more-button-arrow {
-  margin: 0 5px 0 25px;
-  padding: 10px;
-  border-radius: 100%;
-  font-size: 15px;
-  height: 10px;
-  color: #E06C55;
+.hustlers-wrapper .learn-more-button:hover {
+  transform: translateY(-2px);
+}
+
+/* Hustler's Diagonal Arrow */
+.hustlers-diagonalArrow {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+  margin: 0 10px;
+  justify-content: center;
+  align-items: center;
   background-color: #fdf5e6;
 }
 
-.hustlers-wrapper .learn-more-button:hover {
-  transform: translateY(-2px);
+.hustlers-diagonalArrow .navArrow{
+  fill: #E06C55;
 }
 
 /* Listing Section */
@@ -3826,11 +3831,6 @@ details-disclosure > details {
     font-size: 12px;
   }
 
-  .hustlers-wrapper .learn-more-button {
-    font-size: 14px;
-    padding: 8px 20px;
-  }
-
   .hustlers-wrapper .listing-item .number {
     font-size: 35px;
   }
@@ -3856,15 +3856,12 @@ details-disclosure > details {
 
 .contactUs-button-wrapper {
   display: flex;
-  /* justify-self: end; */
 }
 
 @media (max-width: 1056px) {
   .format-header-icons {
     display: flex;
     justify-content: center;
-    /* flex-direction: column; */
- 
   }
   
   .hustlers-icons-header-wrapper {
@@ -3873,8 +3870,6 @@ details-disclosure > details {
 
   .contactUs-button-wrapper {
     display: block;
-    /* justify-self: end; */
-    /* border: 1px solid red; */
   }
 }
 
@@ -3883,10 +3878,6 @@ details-disclosure > details {
     display: none;
   }
 }
-
-
-
-
 
 /* Fonts */
 @font-face {
