@@ -3605,9 +3605,23 @@ details-disclosure > details {
 
 /* ------ STYLING ADDED ------ */
 
+/* --- ROOT STYLES */
+:root {
+  --primary-color: #034436;
+  --secondary-color: #edb05c;
+  --tetiary-color: #3d4d56;
+  --quaternary-color: #fdf5e6;
+  --background-btn-color-hover: #2a353b;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #edb05c;
+  --tertiary-text-color: #E06C55;
+  --text-subheading-color: #b9b9b9;
+  --box-shadow-color: rgba(29, 28, 28, 0.65);
+}
+
 /* Contact Us Button */
 .btn__contact-us {
-  color: #fdf5e6;
+  color: var(--primary-text-color);
   border-radius: 3rem;
   padding: 0.5rem 1.5rem;
   max-width: 150px;
@@ -3615,7 +3629,7 @@ details-disclosure > details {
   font-weight: 600;
   text-align: center;
   margin-left: 20px;
-  background-color: #034436;
+  background-color: var(--tetiary-color);
 }
 
 
@@ -3624,8 +3638,8 @@ details-disclosure > details {
 }
 
 .btn__contact-us:hover {
-  color: #fff;
-  background-color: #1f3626;
+  color: var(--primary-text-color);
+  background-color: var(--background-btn-color-hover);
   transform: translateY(-2px);
 }
 
@@ -3640,13 +3654,13 @@ details-disclosure > details {
   font-weight: 500;
   font-size: 65px;
   margin-bottom: 5px;
-  color: #3d4d56;
+  color: var(--secondary-color);
 }
 
 .hustlers-wrapper .subheading {
   font-size: 18px;
   font-style: italic;
-  color: #656E65;
+  color: var(--text-subheading-color);
   margin-bottom: 20px;
 }
 
@@ -3656,13 +3670,13 @@ details-disclosure > details {
   font-weight: 600;
   line-height: 1.6;
   max-width: 700px;
-  color: #3d4d56;
+  color: var(--primary-text-color);
 }
 
 .hustlers-wrapper .learn-more-button {
   display: inline-flex;
-  background-color: #034436;
-  color: #fdf5e6;
+  background-color: var(--secondary-color);
+  color: var(--primary-text-color);
   margin-top: 20px;
   padding: 10px 0px 10px 30px;
   border-radius: 25px;
@@ -3670,7 +3684,7 @@ details-disclosure > details {
   font-weight: bold;
   letter-spacing: 2px;
   text-decoration: none;
-  box-shadow: 20px 20px 40px rgba(237, 176, 92, 0.65);
+  box-shadow: 20px 20px 40px var(--box-shadow-color);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -3687,11 +3701,11 @@ details-disclosure > details {
   margin: 0 10px;
   justify-content: center;
   align-items: center;
-  background-color: #fdf5e6;
+  background-color: var(--quaternary-color);
 }
 
 .hustlers-diagonalArrow .navArrow{
-  fill: #E06C55;
+  fill: var(--primary-color);
 }
 
 /* Listing Section */
@@ -3716,40 +3730,40 @@ details-disclosure > details {
   position: absolute;
   top: 0px;
   right: 20px; /* Adjusted for proper alignment */
-  color: #3d4d56; /* Default text color for numbers */
+  color: var(--tertiary-text-color); /* Default text color for numbers */
 }
 
 .hustlers-wrapper .title {
   font-size: 35px;
   font-family: "CorporateAPro-Regular";
   margin: 20px 0 10px;
-  color: #3d4d56;
+  color: var(--primary-text-color);
 }
 
 .hustlers-wrapper .listing-item p {
   font-size: 16px;
   font-family: "Gill Sans";
-  color: #3d4d56;
+  color: var(--primary-text-color);
   max-width: 350px;
 }
 
 .hustlers-wrapper .listing-item:nth-child(3) {
-  background-color: #e45e44; 
-  color: #FFF;
+  background-color: var(--tetiary-color); 
+  color: var(--primary-text-color);
   border-radius: 150px 10px 150px 150px;
-  box-shadow: 20px 20px 40px rgba(237, 176, 92, 0.65);
+  box-shadow: 20px 20px 40px var(--box-shadow-color);
 }
 
 .hustlers-wrapper .listing-item:nth-child(3) .number {
-  color: #000; 
+  color: var(--tertiary-text-color); 
 }
 .hustlers-wrapper .listing-item:nth-child(3) .title {
-  color: #fff; /* White number for highlighted listing */
+  color: var(--primary-text-color); /* White number for highlighted listing */
 }
 
 .hustlers-wrapper .listing-item:nth-child(3) h3,
 .hustlers-wrapper .listing-item:nth-child(3) p {
-  color: #FFF; /* White text */
+  color: var(--primary-text-color); /* White text */
 }
 
 /* Responsive Design */
@@ -3894,7 +3908,7 @@ details-disclosure > details {
 .h2 { 
   font-family: "CorporateAPro-Regular" !important;
   font-size: 32px;
-  color: #034436 !important;
+  color: var(--secondary-text-color) !important;
  }
 
 .header__menu-item { 
@@ -3924,3 +3938,4 @@ details-disclosure > details {
     font-size: 20px;
   }
 }
+
