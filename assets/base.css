@@ -3900,3 +3900,27 @@ details-disclosure > details {
 .header__menu-item { 
   font-family:'Gill Sans', 'Gill Sans MT', sans-serif !important; 
 }
+
+@media (max-width: 390px) {
+  .h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 360px) {
+  .h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 350px) {
+  .h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 320px) {
+  .h2 {
+    font-size: 20px;
+  }
+}
