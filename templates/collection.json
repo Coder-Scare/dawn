@@ -11,6 +11,9 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "custom_css": [
+        "h1 {font-family: \"CorporateAPro-Regular\";}"
+      ],
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
@@ -19,6 +22,9 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "custom_css": [
+        "div,h2,label,select,span {font-family: \"Gill Sans\";}"
+      ],
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
