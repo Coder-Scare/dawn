@@ -2,8 +2,8 @@
     <!-- Main Content -->
     <section class="hero">
       <h1>{{ section.settings.heading }}</h1>
-      <p class="subheading">{{ section.settings.subheading }}</p>
-      <p class="description">{{ section.settings.description }}</p>
+      <p class="subheading">{{  section.settings.subheading }}</p>
+      <p class="description">{{section.settings.description}}</p>
       <a href="/pages/about" class="learn-more-button">Learn More 
         <span class="hustlers-diagonalArrow">
           <svg class="navArrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -17,19 +17,19 @@
     {% comment %} #TODO: Move to it's own liquid component later {% endcomment %}
     <section class="listings">
       <div class="listing-item">
-        <span class="number">01</span>
-        <h2 class="title">Listing</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia.</p>
+        <span class="number">{{ section.settings.listing-num-1 }}</span>
+        <h2 class="title">{{ section.settings.listing-num-1-title }}</h2>
+        <p>{{ section.settings.listing-num-1-description }}</p>
       </div>
       <div class="listing-item">
-      <span class="number">02</span>
-        <h2 class="title">Listing</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia.</p>
+      <span class="number">{{ section.settings.listing-num-2 }}</span>
+        <h2 class="title">{{ section.settings.listing-num-2-title }}</h2>
+        <p>{{ section.settings.listing-num-2-description }}</p>
       </div>
       <div class="listing-item highlighted">
-      <span class="number">03</span>
-        <h2 class="title">Listing</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia.</p>
+      <span class="number">{{ section.settings.listing-num-3 }}</span>
+        <h2 class="title">{{ section.settings.listing-num-3-title }}</h2>
+        <p>{{ section.settings.listing-num-3-description }}</p>
       </div>
     </section>
   </div>
@@ -47,20 +47,73 @@
         {
           "type": "text",
           "id": "subheading",
-          "label":"Subheading",
+          "label": "Subheading",
           "default": "7 guests · 3 bedrooms · 6 beds · 2 bathrooms"
-        }
-        {
-            "type": "textarea",
-            "id": "description",
-            "label": "Description",
-            "default": "This is a custom description for the section."
-        }
+      },
+      {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "This is a custom description for the section."
+      },
+      {
+          "type": "text",
+          "id": "listing-num-1",
+          "label": "Listing-num-1",
+          "default": "01"
+      },
+      {
+          "type": "text",
+          "id": "listing-num-1-title",
+          "label": "Listing-num-1-title",
+          "default": "Listing"
+      },
+      {
+          "type": "textarea",
+          "id": "listing-num-1-description",
+          "label": "Listing-num-1-description",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia."
+      },
+      {
+          "type": "text",
+          "id": "listing-num-2",
+          "label": "Listing-num-2",
+          "default": "02"
+      },
+      {
+          "type": "text",
+          "id": "listing-num-2-title",
+          "label": "Listing-num-2-title",
+          "default": "Listing"
+      },
+      {
+          "type": "textarea",
+          "id": "listing-num-2-description",
+          "label": "Listing-num-2-description",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia."
+      },
+      {
+          "type": "text",
+          "id": "listing-num-3",
+          "label": "Listing-num-3",
+          "default": "03"
+      },
+      {
+          "type": "text",
+          "id": "listing-num-3-title",
+          "label": "Listing-num-3-title",
+          "default": "Listing"
+      },
+      {
+          "type": "textarea",
+          "id": "listing-num-3-description",
+          "label": "Listing-num-3-description",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia."
+      },
     ],
     "presets": [
         {
-            "name": "hustlersAvenue-hompage-banner",
-            "category": "Custom"
+            "name": "hustlersAvenue-hompage-banner"
         }
     ]
 }

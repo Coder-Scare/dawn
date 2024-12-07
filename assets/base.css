@@ -3649,7 +3649,9 @@ details-disclosure > details {
   padding: 0px 10% 50px;
 }
 
-.hustlers-wrapper h1, .about-wrapper h1 {
+.hustlers-wrapper h1, 
+.about-wrapper h1,
+.our-team-wrapper h1 {
   font-family: "CorporateAPro-Regular";
   font-weight: 500;
   font-size: 65px;
@@ -3657,8 +3659,11 @@ details-disclosure > details {
   color: var(--secondary-color);
 }
 
-.hustlers-wrapper .subheading, .about-wrapper .subheading {
+.hustlers-wrapper .subheading, 
+.about-wrapper .subheading,
+.our-team-wrapper .subheading {
   font-size: 18px;
+  font-family: "Gill sans";
   font-style: italic;
   color: var(--text-subheading-color);
   margin-bottom: 20px;
@@ -3769,7 +3774,9 @@ details-disclosure > details {
 /* Responsive Design */
 
 @media (max-width: 1024px) {
-  .hustlers-wrapper h1, .about-wrapper h1 {
+  .hustlers-wrapper h1, 
+  .about-wrapper h1,
+  .our-team-wrapper h1 {
     font-size: 50px;
   }
 
@@ -3800,14 +3807,17 @@ details-disclosure > details {
     padding: 0px 5% 50px;
   }
 
-  .hustlers-wrapper h1, .about-wrapper h1 {
+  .hustlers-wrapper h1, 
+  .about-wrapper h1, 
+  .our-team-wrapper h1 {
     font-size: 40px;
   }
 
   .hustlers-wrapper .subheading,
   .hustlers-wrapper .description, 
   .about-wrapper .subheading, 
-  .about-info-wrapper p {
+  .about-info-wrapper p,
+  .our-team-wrapper .subheading {
     font-size: 14px;
   }
 
@@ -3839,13 +3849,15 @@ details-disclosure > details {
 }
 
 @media (max-width: 480px) {
-  .hustlers-wrapper h1, .about-wrapper h1 {
+  .hustlers-wrapper h1, 
+  .about-wrapper h1, 
+  .our-team-wrapper h1 {
     font-size: 30px;
   }
 
   .hustlers-wrapper .description,
   .about-info-wrapper p {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .hustlers-wrapper .listing-item .number {
@@ -3896,17 +3908,17 @@ details-disclosure > details {
   }
 }
 
-/* Hustlers About Section */
+/* Hustlers About Section & Some of Our Team styling */
 
-.about-wrapper {
+.about-wrapper, .our-team-wrapper {
   padding: 0px 10% 50px;
 }
 
 .about-info-wrapper {
   padding: 50px 0px 0px;
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
+  direction: ltr;
 }
 
 .about-info-wrapper p {
@@ -3915,6 +3927,7 @@ details-disclosure > details {
   font-family: "Gill sans";
   line-height: 1.6;
   flex: 1;
+  color: var(--primary-text-color);
 }
 
 .about-info-wrapper .about-img-wrapper {
@@ -3928,6 +3941,10 @@ details-disclosure > details {
 .about-img-wrapper img {
   max-width: 100%;
   object-fit: cover;
+}
+
+.reverse {
+  direction: rtl;
 }
 
 @media (max-width: 735px) {
@@ -3952,8 +3969,84 @@ details-disclosure > details {
   }
 }
 
+/* Hustlers Our Team styling */
 
+.our-team-wrapper {
+  max-width: 2000px;
+  margin: auto;
+}
 
+.our-team-wrapper .subheading {
+  padding-bottom: 60px;
+}
+
+.the-team-wrapper {
+  display: flex;
+  text-align: center;
+  background-color: var(--tetiary-color);
+  padding: 30px 20px 20px;
+  border-radius: 25px;
+}
+
+.team-member-wrapper:nth-child(1) {
+  border-right: solid 1px var(--text-subheading-color);
+}
+
+.team-member-image-and-title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.team-member-image-and-title img {
+  max-width: 100%;
+  object-fit: cover;
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+}
+
+.team-member-image-and-title p {
+  font-family: "Gill sans";
+  font-size: 26px;
+  color: var(--primary-text-color)
+}
+
+.team-member-image-and-title .hustler-title {
+  margin-top: -30px;
+  font-weight: bold;
+}
+
+.team-member-description {
+  padding: 10px 20px 0px;
+  color: var(--primary-text-color);
+}
+
+@media (max-width: 1000px) {
+  .our-team-wrapper .subheading {
+    padding-bottom: 10px;
+  }
+
+  .the-team-wrapper {
+    flex-direction: column;
+  }
+
+  .team-member-wrapper:nth-child(1) {
+    border-right: none;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 460px) {
+  .team-member-image-and-title img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .team-member-description {
+    padding: 10px 0px 0px;
+  }
+}
 
 /* Fonts */
 @font-face {

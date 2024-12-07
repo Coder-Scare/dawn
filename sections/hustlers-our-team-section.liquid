@@ -1,0 +1,103 @@
+<div class="our-team-wrapper">
+    <h1>{{ section.settings.heading }}</h1>
+    <p class="subheading">{{ section.settings.subheading }}</p>
+    
+    <div class="the-team-wrapper">
+        <div class="team-member-wrapper">
+            <div class="team-member-image-and-title">
+                {{ section.settings.image_with_text_image1 | image_url: width: 500 | image_tag }}
+                <p class="name">{{ section.settings.image1_name }}</p>
+                <span class="hustler-title">{{ section.settings.image1_role }}</span>
+            </div>
+
+            <div class="team-member-description">
+                <p>{{ section.settings.description1 }}</p>
+            </div>
+        </div>
+        <div class="team-member-wrapper">
+            <div class="team-member-image-and-title">
+                {{ section.settings.image_with_text_image2 | image_url: width: 500 | image_tag }}
+                <p class="name">{{ section.settings.image2_name }}</p>
+                <span class="hustler-title">{{ section.settings.image2_role }}</span>  
+            </div>
+
+            <div class="team-member-description">
+                <p>{{ section.settings.description2 }}</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+{% schema %}
+    {
+        "name": "hustlers-our-team-section",
+        "settings": [
+            {
+                "type": "text",
+                "label": "heading",
+                "id": "heading",
+                "default": "Our Team"
+            },          
+            {
+                "type": "text",
+                "label": "subheading",
+                "id": "subheading",
+                "default": "Under the hood"
+            },
+            {
+                "type": "image_picker",
+                "id": "image_with_text_image1",
+                "label": "Image1"
+            },
+            {
+                "type": "text",
+                "id": "image1_name",
+                "label": "Image1_name",
+                "default": "Mike"
+            },
+            {
+                "type": "text",
+                "id": "image1_role",
+                "label": "Image1_role",
+                "default": "Co Founder"
+            },
+            {
+                "type": "text",
+                "id": "description1",
+                "label": "Description1",
+                "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia."
+            },
+            {
+                "type": "image_picker",
+                "id": "image_with_text_image2",
+                "label": "Image2"
+            },           
+            {
+                "type": "text",
+                "id": "image2_name",
+                "label": "Image2_name",
+                "default": "James"
+            },
+            {
+                "type": "text",
+                "id": "image2_role",
+                "label": "Image2_role",
+                "default": "Co Founder"
+            },
+            {
+                "type": "text",
+                "id": "description2",
+                "label": "Description2",
+                "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia."
+            },
+        ],
+        "presets": [
+            {
+                "name":"Hustlers Team"
+            }
+        ]
+    }
+{% endschema %}

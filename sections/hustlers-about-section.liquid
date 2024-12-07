@@ -1,33 +1,53 @@
-<section class="about-wrapper">
-    <h1>{{ section.settings.heading }}</h1>
-    <p class="subheading">Mentality is everything!</p>
+<div class="about-wrapper">
+  <h1>{{ section.settings.heading }}</h1>
+  <p class="subheading">{{ section.settings.subheading }}</p>
 
-    <div class="about-info-wrapper">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia.</p>
-        <div class="about-img-wrapper">
-            <img src="../assets/Dollar-Bill-Dimensions.jpg" alt="About Page Image" />
-        </div>
-        
-    <div>
-
-</section>
+  <div class="about-info-wrapper {% if section.settings.reverse %}reverse{% endif %}">
+    <p class="description">{{ section.settings.description }}</p>
+    <div class="about-img-wrapper">
+      {{ section.settings.image_with_text_image | image_url: width: 800 | image_tag }}
+    </div>
+  </div>
+</div>
 
 {% schema %}
+{
+  "name": "hustlers-about-section",
+  "settings": [
     {
-        "name": "hustlers-about-section",
-        "settings": [
-            {
-                "type": "text",
-                "label": "heading",
-                "id": "heading",
-                "default": "About Hustlers Avenue"
-            }
-        ],
-        "presets": [
-            {
-                "name": "Hustlers About"
-            }
-        ]
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "About Hustlers Avenue"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Mentality is everything!"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "Description",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia."
+    },
+    {
+      "type": "image_picker",
+      "id": "image_with_text_image",
+      "label": "Image"
+    },
+    {
+      "type": "checkbox",
+      "id": "reverse",
+      "label": "Reverse Image Position",
+      "default": false
     }
+  ],
+  "presets": [
+    {
+      "name": "Hustlers About"
+    }
+  ]
+}
 {% endschema %}
-
