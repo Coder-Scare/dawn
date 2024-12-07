@@ -1,0 +1,33 @@
+<section class="about-wrapper">
+    <h1>{{ section.settings.heading }}</h1>
+    <p class="subheading">Mentality is everything!</p>
+
+    <div class="about-info-wrapper">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia.</p>
+        <div class="about-img-wrapper">
+            <img src="../assets/Dollar-Bill-Dimensions.jpg" alt="About Page Image" />
+        </div>
+        
+    <div>
+
+</section>
+
+{% schema %}
+    {
+        "name": "hustlers-about-section",
+        "settings": [
+            {
+                "type": "text",
+                "label": "heading",
+                "id": "heading",
+                "default": "About Hustlers Avenue"
+            }
+        ],
+        "presets": [
+            {
+                "name": "Hustlers About"
+            }
+        ]
+    }
+{% endschema %}
+

@@ -13,11 +13,19 @@
       "type": "hustlers-homepage-banner",
       "settings": {
         "heading": "Modern Living as a Mindset",
+        "subheading": "7 guests · 3 bedrooms · 6 beds · 2 bathrooms",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam condimentum venenatis tempus. Phasellus eu ante leo. Fusce eget augue non nisl interdum suscipit in non quam. Ut eget venenatis lectus."
+      }
+    },
+    "hustlers-about-section": {
+      "type": "hustlers-about-section",
+      "settings": {
+        "heading": "About Hustlers Avenue"
       }
     }
   },
   "order": [
-    "hustlers-homepage-banner"
+    "hustlers-homepage-banner",
+    "hustlers-about-section"
   ]
 }

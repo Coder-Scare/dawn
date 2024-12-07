@@ -3649,7 +3649,7 @@ details-disclosure > details {
   padding: 0px 10% 50px;
 }
 
-.hustlers-wrapper h1 {
+.hustlers-wrapper h1, .about-wrapper h1 {
   font-family: "CorporateAPro-Regular";
   font-weight: 500;
   font-size: 65px;
@@ -3657,7 +3657,7 @@ details-disclosure > details {
   color: var(--secondary-color);
 }
 
-.hustlers-wrapper .subheading {
+.hustlers-wrapper .subheading, .about-wrapper .subheading {
   font-size: 18px;
   font-style: italic;
   color: var(--text-subheading-color);
@@ -3769,11 +3769,11 @@ details-disclosure > details {
 /* Responsive Design */
 
 @media (max-width: 1024px) {
-  .hustlers-wrapper h1 {
+  .hustlers-wrapper h1, .about-wrapper h1 {
     font-size: 50px;
   }
 
-  .hustlers-wrapper .description {
+  .hustlers-wrapper .description, .about-info-wrapper p {
     font-size: 16px;
   }
 
@@ -3800,12 +3800,14 @@ details-disclosure > details {
     padding: 0px 5% 50px;
   }
 
-  .hustlers-wrapper h1 {
+  .hustlers-wrapper h1, .about-wrapper h1 {
     font-size: 40px;
   }
 
   .hustlers-wrapper .subheading,
-  .hustlers-wrapper .description {
+  .hustlers-wrapper .description, 
+  .about-wrapper .subheading, 
+  .about-info-wrapper p {
     font-size: 14px;
   }
 
@@ -3837,11 +3839,12 @@ details-disclosure > details {
 }
 
 @media (max-width: 480px) {
-  .hustlers-wrapper h1 {
+  .hustlers-wrapper h1, .about-wrapper h1 {
     font-size: 30px;
   }
 
-  .hustlers-wrapper .description {
+  .hustlers-wrapper .description,
+  .about-info-wrapper p {
     font-size: 12px;
   }
 
@@ -3893,6 +3896,65 @@ details-disclosure > details {
   }
 }
 
+/* Hustlers About Section */
+
+.about-wrapper {
+  padding: 0px 10% 50px;
+}
+
+.about-info-wrapper {
+  padding: 50px 0px 0px;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+}
+
+.about-info-wrapper p {
+  font-size: 18px;
+  padding: 10px 20px;
+  font-family: "Gill sans";
+  line-height: 1.6;
+  flex: 1;
+}
+
+.about-info-wrapper .about-img-wrapper {
+  display: flex;
+  justify-self: center;
+  padding: 10px;
+  flex: 1;
+  width: 50%;
+}
+
+.about-img-wrapper img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 735px) {
+  .about-info-wrapper {
+    padding: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-info-wrapper p {
+    padding: 0px 20px;
+  }
+
+  .about-info-wrapper .about-img-wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-wrapper {
+    padding: 0px 5% 50px;
+  }
+}
+
+
+
+
 /* Fonts */
 @font-face {
   font-family: "Gill Sans";
@@ -3938,4 +4000,3 @@ details-disclosure > details {
     font-size: 20px;
   }
 }
-

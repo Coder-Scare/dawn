@@ -2,8 +2,8 @@
     <!-- Main Content -->
     <section class="hero">
       <h1>{{ section.settings.heading }}</h1>
-      <p class="subheading">7 guests · 3 bedrooms · 6 beds · 2 bathrooms</p>
-      <p class="description">{{section.settings.description}}</p>
+      <p class="subheading">{{ section.settings.subheading }}</p>
+      <p class="description">{{ section.settings.description }}</p>
       <a href="/pages/about" class="learn-more-button">Learn More 
         <span class="hustlers-diagonalArrow">
           <svg class="navArrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -44,6 +44,12 @@
             "label": "Heading",
             "default": "Welcome to My Custom Section"
         },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label":"Subheading",
+          "default": "7 guests · 3 bedrooms · 6 beds · 2 bathrooms"
+        }
         {
             "type": "textarea",
             "id": "description",
