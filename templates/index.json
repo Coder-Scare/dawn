@@ -15,32 +15,9 @@
         "heading": "Modern Living as a Mindset",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam condimentum venenatis tempus. Phasellus eu ante leo. Fusce eget augue non nisl interdum suscipit in non quam. Ut eget venenatis lectus."
       }
-    },
-    "hustlers-about-section": {
-      "type": "hustlers-about-section",
-      "settings": {
-        "heading": "About Hustlers Avenue",
-        "subheading": "Mentality is everything!",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia.",
-        "image_with_text_image": "shopify://shop_images/Dollar-Bill-Dimensions.jpg",
-        "reverse": false
-      }
-    },
-    "hustlers-our-team-section": {
-      "type": "hustlers-our-team-section",
-      "settings": {
-        "heading": "Our Team",
-        "subheading": "Under the hood",
-        "image_with_text_image1": "shopify://shop_images/blackEntrepreneur2_Micheal_Jordan.png",
-        "image_with_text_image2": "shopify://shop_images/blackEntrepreneur1.webp",
-        "description1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia.",
-        "description2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum vulputate lacinia."
-      }
     }
   },
   "order": [
-    "hustlers-homepage-banner",
-    "hustlers-about-section",
-    "hustlers-our-team-section"
+    "hustlers-homepage-banner"
   ]
 }

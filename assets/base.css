@@ -2317,6 +2317,7 @@ input[type='checkbox'] {
 .shopify-section-header-sticky {
   position: sticky;
   top: 0;
+  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08); 
 }
 
 .shopify-section-header-hidden {
@@ -2348,8 +2349,7 @@ input[type='checkbox'] {
 }
 
 .header-wrapper--border-bottom {
-  /* border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08); */
-  
+  /* Figure our how to dynamically render the border bottom on nav bar on scroll */
 }
 
 .header {
@@ -3605,7 +3605,7 @@ details-disclosure > details {
 
 /* ------ STYLING ADDED ------ */
 
-/* --- ROOT STYLES */
+/* --- HUSTLERS ROOT STYLES */
 :root {
   --primary-color: #034436;
   --secondary-color: #edb05c;
@@ -3617,6 +3617,17 @@ details-disclosure > details {
   --tertiary-text-color: #E06C55;
   --text-subheading-color: #b9b9b9;
   --box-shadow-color: rgba(29, 28, 28, 0.65);
+}
+
+/* Change background color for native dropdown menu in browser default styles */
+select, select:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+option {
+  color: var(--primary-text-color);
+  background-color: var(--primary-color);
 }
 
 /* Contact Us Button */
@@ -3876,7 +3887,7 @@ details-disclosure > details {
 /* Header Icons Format */
 .format-header-icons {
   display: flex;
-  justify-content: center;
+  justify-content: end;
 }
 
 .hustlers-icons-header-wrapper {

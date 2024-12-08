@@ -1,7 +1,37 @@
+/* --- HUSTLERS ROOT STYLES */
+:root {
+  --primary-color: #034436;
+  --secondary-color: #edb05c;
+  --tetiary-color: #3d4d56;
+  --quaternary-color: #fdf5e6;
+  --background-btn-color-hover: #2a353b;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #edb05c;
+  --tertiary-text-color: #E06C55;
+  --text-subheading-color: #b9b9b9;
+  --box-shadow-color: rgba(29, 28, 28, 0.65);
+}
+
 .collection-hero__inner {
   display: flex;
   flex-direction: column;
 }
+
+/* Changed page width of Products title */
+
+.collection-hero .page-width {
+  padding: 0 10%;
+  max-width: 100%;
+  /* border: red solid 1px; */
+}
+
+/* 
+
+@media (max-width: 1500px) {
+  .collection-hero .page-width {
+    padding: 0 2%;
+  }
+} */
 
 .collection-hero--with-image .collection-hero__inner {
   margin-bottom: 0;
@@ -36,7 +66,9 @@
 }
 
 .collection-hero__title {
-  margin: 2.5rem 0;
+  /* margin: 2.5rem 0; */
+  font-size: 65px;
+  color: var(--secondary-color);
 }
 
 .collection-hero__title + .collection-hero__description {
