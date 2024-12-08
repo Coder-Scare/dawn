@@ -3662,7 +3662,8 @@ option {
 
 .hustlers-wrapper h1, 
 .about-wrapper h1,
-.our-team-wrapper h1 {
+.our-team-wrapper h1,
+.collection-hero__title {
   font-family: "CorporateAPro-Regular";
   font-weight: 500;
   font-size: 65px;
@@ -3787,7 +3788,8 @@ option {
 @media (max-width: 1024px) {
   .hustlers-wrapper h1, 
   .about-wrapper h1,
-  .our-team-wrapper h1 {
+  .our-team-wrapper h1,
+  .collection-hero__title {
     font-size: 50px;
   }
 
@@ -3820,7 +3822,8 @@ option {
 
   .hustlers-wrapper h1, 
   .about-wrapper h1, 
-  .our-team-wrapper h1 {
+  .our-team-wrapper h1,
+  .collection-hero__title {
     font-size: 40px;
   }
 
@@ -3862,7 +3865,8 @@ option {
 @media (max-width: 480px) {
   .hustlers-wrapper h1, 
   .about-wrapper h1, 
-  .our-team-wrapper h1 {
+  .our-team-wrapper h1,
+  .collection-hero__title {
     font-size: 30px;
   }
 
@@ -4104,3 +4108,7 @@ option {
     font-size: 20px;
   }
 }
+
+/* .shopify-section {
+  background-color: red !important;
+} */
