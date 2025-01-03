@@ -23,16 +23,16 @@
     "hustlers_our_team_section_KfiBiF": {
       "type": "hustlers-our-team-section",
       "settings": {
-        "heading": "Our Team",
-        "subheading": "Under the hood",
-        "image_with_text_image1": "shopify://shop_images/blackEntrepreneur2_Micheal_Jordan.png",
-        "image1_name": "Mike",
+        "heading": "Meet The Team",
+        "subheading": "",
+        "image_with_text_image1": "shopify://shop_images/04a3b258-8006-4aa2-8146-a9dfd97e0827.jpg",
+        "image1_name": "Tyrrell Okolo",
         "image1_role": "Co Founder",
-        "description1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "image_with_text_image2": "shopify://shop_images/blackEntrepreneur1.webp",
-        "image2_name": "James",
+        "description1": "Tyrrell brings over five years of experience in the pharmaceutical industry, where he mastered complex market dynamics and drove significant growth for leading organizations. Transitioning to the technology sales sector, he has achieved remarkable success, managing multi-million-dollar deals. His diverse expertise in both industries highlights a commitment to excellence and a nuanced understanding of business operations in competitive markets. As Co-Founder of Hustlers Avenue, Tyrrell is a passionate advocate for financial literacy and social mobility. He is dedicated to equipping and empowering individuals from underserved communities by ensuring they have the tools and knowledge necessary to nagivate financial challenges. Tyrrell is committed to inspiring positive change and fostering financial confidence within the communities he serves.",
+        "image_with_text_image2": "shopify://shop_images/IMG_7930.jpg",
+        "image2_name": "Nathan Nwaokolo",
         "image2_role": "Co Founder",
-        "description2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "description2": "Nathan is a dynamic professional with over three years of experience at one of the most reputable Financial Services organisations, where he has honed his expertise in technology risk management and assurance. Nathan’s analytical acumen and commitment to excellence have positioned him as a trusted professional. Beyond his career, Nathan is deeply committed to promoting social mobility, driven by a passion for creating equitable opportunities for underserved communities. As an advocate for change, he dedicates his efforts to empowering individuals to overcome systemic barriers and achieve personal and professional success. His dedication to bridging gaps in opportunity reflects a personal mission to inspire and uplift others, making him a catalyst for positive change within his field and the communities that benefit from his efforts."
       }
     }
   },

@@ -12,8 +12,18 @@
     "hustlers-homepage-banner": {
       "type": "hustlers-homepage-banner",
       "settings": {
-        "heading": "Modern Living as a Mindset",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam condimentum venenatis tempus. Phasellus eu ante leo. Fusce eget augue non nisl interdum suscipit in non quam. Ut eget venenatis lectus."
+        "heading": "A Better Way To Move Ahead",
+        "subheading": "",
+        "description": "Empowering individuals through digestible knowledge, powerful tools and a supportive community to foster confident, informed economic decision-making",
+        "listing-num-1": "01",
+        "listing-num-1-title": "Educate",
+        "listing-num-1-description": "Removing the jargon and simplifying complex concepts to provide the knowledge you need to unlock your full potential",
+        "listing-num-2": "02",
+        "listing-num-2-title": "Empower",
+        "listing-num-2-description": "Equipping you with the tools and resources to transform ambition into real, measurable success",
+        "listing-num-3": "03",
+        "listing-num-3-title": "Evolve",
+        "listing-num-3-description": "Fostering personal growth and strengthening communities to create lasting progress and meaningful change"
       }
     }
   },

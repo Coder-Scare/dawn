@@ -130,6 +130,33 @@
       endif
     -%}
 
+    {% comment %} Social Media Icons {% endcomment %}
+     <div class="hustlers-social-media-header-wrapper">
+        <ul class="list-unstyled list-social-header{% if class %} {{ class}}{% endif %}" role="list">
+          {%- if settings.social_instagram_link != blank -%}
+            <li class="list-social__item">
+              <a href="{{ settings.social_instagram_link }}" class="link list-social__link" target="_blank">
+                <span class="svg-wrapper">
+                  {{- 'icon-instagram.svg' | inline_asset_content -}}
+                </span>
+                <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
+              </a>
+            </li>
+          {%- endif -%}
+          {%- if settings.social_tiktok_link != blank -%}
+            <li class="list-social__item">
+              <a href="{{ settings.social_tiktok_link }}" class="link list-social__link" target="_blank">
+                <span class="svg-wrapper">
+                  {{- 'icon-tiktok.svg' | inline_asset_content -}}
+                </span>
+                <span class="visually-hidden">{{ 'general.social.links.tiktok' | t }}</span>
+              </a>
+            </li>
+          {%- endif -%}
+        </ul>
+     </div>
+
+
     {%- if section.settings.logo_position != 'middle-center' -%}
       {%- if request.page_type == 'index' -%}
         <h1 class="header__heading">
