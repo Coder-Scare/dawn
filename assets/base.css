@@ -4013,6 +4013,7 @@ option {
   text-align: center;
   background-color: var(--tetiary-color);
   padding: 30px 20px 20px;
+  margin-top: 20px;
   border-radius: 25px;
 }
 
