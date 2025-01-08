@@ -2345,11 +2345,8 @@ input[type='checkbox'] {
   display: block;
   position: relative;
   background-color: rgb(var(--color-background));
+  padding-bottom: 5px;
 
-}
-
-.header-wrapper--border-bottom {
-  /* Figure our how to dynamically render the border bottom on nav bar on scroll */
 }
 
 .header {
@@ -4099,7 +4096,7 @@ option {
 
 @media(max-width: 1390px) {
   .hustlers-social-media-header-wrapper {
-    top: 80px;
+    top: 77px;
     left: 2%;
   }
 }
